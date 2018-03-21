@@ -9,3 +9,8 @@ In root directory, run:
 ``` brew install python3 ```
 
 ``` sudo easy_install pip ```
+
+## Run Tests - Auditor
+``` cd ./auditor ```
+
+``` python tests.py ```
