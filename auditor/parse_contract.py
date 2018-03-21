@@ -1,4 +1,5 @@
 import re
+from helper import flatten_string
 
 class ContractParser: 
     def has_msg_sender(self, contract_as_string):
@@ -53,5 +54,5 @@ class ContractParser:
 
         withdraw_function = contract_as_string[withdraw_function_position:last_position + 1]
 
-        return "".join(withdraw_function.split())
+        return flatten_string(withdraw_function)
         
