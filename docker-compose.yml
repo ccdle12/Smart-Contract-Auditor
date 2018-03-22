@@ -2,4 +2,6 @@ version: '3'
 services:
   auditor:
     build: ./auditor
+  trufflle:
+    build: ./truffle
   
