@@ -2,11 +2,8 @@ FROM node:latest
 
 LABEL Chris Coverdale <chris.coverdale24@gmail.com>
 
-RUN mkdir /code
+RUN npm install -g ganache-cli
 
-WORKDIR /code
+EXPOSE 8545
 
-RUN npm install -g truffle
-
-
-
+CMD ["ganache-cli"]

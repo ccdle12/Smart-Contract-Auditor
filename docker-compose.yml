@@ -1,7 +1,17 @@
 version: '3'
 services:
-  auditor:
-    build: ./auditor
+  ganache:
+    image: ccdle12/ganache-cli
+    ports:
+      - "7000:8545"
+
   truffle:
-    build: ./truffle
+    image: ccdle12/truffle
+    command: bash
+    stdin_open: true 
+    tty: true
+    ports: 
+      - "7001:8080"
+    volumes:
+      - ./:/code
   
