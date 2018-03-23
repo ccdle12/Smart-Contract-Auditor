@@ -92,4 +92,18 @@ truffle migrate
 truffle test
 ```
 
+### Run - Auditor
+
+Open a new terminal
+
+Go To:
+
+``` cd ./auditor```
+
+Run tests
+
+```
+python test.py
+```
+
 
