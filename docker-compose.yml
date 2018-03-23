@@ -7,14 +7,10 @@ services:
     tty: true
     ports:
       - "7002:8900"
-
-  ganache:
-    image: ccdle12/ganache-cli
-    ports:
-      - "7000:8545"
-
+  
   truffle:
-    image: ccdle12/truffle
+    build: ./truffle
+    # image: ccdle12/truffle
     command: bash
     stdin_open: true 
     tty: true
@@ -22,4 +18,9 @@ services:
       - "7001:8080"
     volumes:
       - ./:/code
+
+  ganache:
+    image: ccdle12/ganache-cli
+    ports:
+      - "7000:8545"
   

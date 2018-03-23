@@ -70,6 +70,8 @@ python tests.py
 
 ``` npm install -g ganache-cli ```
 
+``` npm install -g mocha ```
+
 ### Run - Ganache
 
 Run Ganache:
