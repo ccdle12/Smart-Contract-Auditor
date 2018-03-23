@@ -1,5 +1,13 @@
 version: '3'
 services:
+  auditor:
+    build: ./auditor
+    command: bash
+    stdin_open: true 
+    tty: true
+    ports:
+      - "7002:8900"
+
   ganache:
     image: ccdle12/ganache-cli
     ports:
