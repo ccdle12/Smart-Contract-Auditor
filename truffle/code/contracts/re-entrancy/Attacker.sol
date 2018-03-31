@@ -1,16 +1,16 @@
 pragma solidity ^0.4.18;
 
-import "./Victim.sol";
+import "./ReentrancyVictim.sol";
 
 contract Attacker {
 
-    Victim public victim;
+    ReentrancyVictim public victim;
     uint public count;
 
     event LogFallback(uint _count, uint _balance);
 
     function Attacker(address _victim) public {
-        victim = Victim(_victim);
+        victim = ReentrancyVictim(_victim);
     }
 
     function collect() payable public {

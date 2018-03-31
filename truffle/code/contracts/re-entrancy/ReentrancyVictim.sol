@@ -1,12 +1,12 @@
 pragma solidity ^0.4.18;
 
-contract Victim {
+contract ReentrancyVictim {
   
     mapping (address => uint) public balances;
 
     event WithdrawEvent(address _sender, uint amount);
 
-    function Victim() public  { }
+    function ReentrancyVictim() public  { }
 
     function deposit() payable public {
         balances[msg.sender] = msg.value;

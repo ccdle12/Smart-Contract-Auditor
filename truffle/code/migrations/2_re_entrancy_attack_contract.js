@@ -1,6 +1,5 @@
-const Attacker = artifacts.require('Attacker.sol')
-const Victim = artifacts.require('Victim')
+const ReentrancyVictim = artifacts.require('ReentrancyVictim')
 
 module.exports = function(deployer) {
-  deployer.deploy(Victim).then(() => deployer.deploy(Attacker, Victim.address))
+  deployer.deploy(ReentrancyVictim);
 };
