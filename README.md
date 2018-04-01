@@ -9,18 +9,10 @@ This will run build an instance of ganache (replacement of testrpc)
 
 ### Run - Truffle
 
-The terminal will look like it's stalled, it will show:
+Open a terminal and run:
 
 ```
-Creating smartcontractauditor_truffle_1 ... done
-```
-
-Press any button
-
-You will see a prompt:
-
-```
-:/code# 
+docker attach smartcontractauditor_truffle_1
 ```
 
 Go into the truffle folder and the code:
@@ -32,8 +24,6 @@ cd ./truffle/code
 Compile, Migrate and Test the contracts:
 
 ```
-truffle compile
-truffle migrate
 truffle test
 ```
 

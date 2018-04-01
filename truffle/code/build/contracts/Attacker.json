@@ -579,7 +579,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 242,
+                                      "referencedDeclaration": 322,
                                       "type": "msg",
                                       "value": "msg"
                                     },
@@ -748,7 +748,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 248,
+                              "referencedDeclaration": 328,
                               "type": "function (address)",
                               "value": "selfdestruct"
                             },
@@ -774,7 +774,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 242,
+                                  "referencedDeclaration": 322,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -919,7 +919,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 257,
+                                  "referencedDeclaration": 337,
                                   "type": "contract Attacker",
                                   "value": "this"
                                 },
@@ -1137,5 +1137,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2018-03-31T15:05:47.457Z"
+  "updatedAt": "2018-03-31T17:15:46.422Z"
 }

@@ -20,7 +20,8 @@ services:
       - ./:/code
 
   ganache:
-    image: ccdle12/ganache-cli
+    build: ./ganache
+    # image: ccdle12/ganache-cli
     ports:
       - "7000:8545"
   
